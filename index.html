@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMan</title>
+    <link rel="icon" href="https://img.icons8.com/?size=50&id=38390&format=png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="nav_bar">
+        <h1>BookMan</h1>
+    </div>
+
+    <div class="container">
+        <div class="book_container">
+        <h2>Rich dad poor dad</h2>
+        <h3>Carol</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores totam, ea nobis placeat cumque officia dolore necessitatibus nisi eveniet, impedit autem molestiae. Placeat ex amet ipsum eum culpa ipsa error?</p>
+        <button onclick=dlt_btn(event)>Delete</button>
+        </div>
+    </div>
+
+    <div class = "popup_overlay"></div>
+    <div class = "popup_box">
+        <h2>Add Book</h2>
+        <form >
+            <input type="text" placeholder="Book Title" class="book_title"  id="book_titleid">
+            <input type="text" placeholder="Book Author" class="book_author" id="book_authorid">
+            <textarea placeholder="Book Description" class="book_description" id="book_descriptionid"></textarea> 
+            <button class="add_book" id ="add_bookid">Add</button>
+            <button class="cancel_book" id="cancel_bookid">Cancel</button>
+        </form>
+    </div>
+
+    <button class="add_btn" >+</button>
+
+    <script src="script.js">
+    </script>
+
+</body>
+
+</html>
